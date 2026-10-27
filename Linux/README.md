@@ -5,12 +5,14 @@ En este apartado me enfocare en distribuciones basadas en Ubuntu o Debian, pero 
 Ya se conoce la seguridad que brinda Linux al ser flexible y configurable, pero las configuraciones por defecto no son suficientes, debemos hacer una serie de pasos para aprovechar realmente las ventajas que nos brindan las distribuciones de Linux.
 
 <p align="center">
-  <img src="images/tux.jpeg" width="60%">
+  <img src="images/tux.jpeg" width="50%">
 </p>
 
 # ⚠️ Atencion
 
 Con esta guia no busco crear una maquina paranoica con configuraciones que puedan comprometer el uso diario, siempre hay que buscar el equilibrio en usabilidad y seguridad sin romper nada. 
+
+# 🛡️ Actualizaciones 
 
 Primero debemos tener actualizado nuestro sistema ya sea en apt o flatpak, con el siguiente comando:
 
@@ -29,6 +31,8 @@ Si queremos que las actualizaciones de seguridad sean automaticas instalamos est
 ```text
 sudo apt install unattended-upgrades
 ```
+
+# 🔥 Firewall
 
 Lo siguiente es configurar un firewall, en este caso utilizaremos UFW, un frontend del firewall del nucleo de linux, nftables o, iptables en sistemas mas antiguos. Traduce cosas como bloquear una ip, que sin UFW, se nos complicaria ya que es tedioso de configurar por si solo, este lo hace de manera sencilla para que el kernel lo entienda.
 
