@@ -63,7 +63,7 @@ Una de las mejores herramientas para estar seguros en Firefox que no lleva bloqu
 A continuacion voy a dejar una captura de tierlist de como califico a los siguientes navegadores para uso diario, OJO con esto no quiero decir que navegador es bueno y cual es malo, solo veo las implicancias que tiene cada uno, como por ejemplo ritmo de actualizaciones, configuraciones por defecto y modelo de negocio.
 
 <p align="center">
-  <img src="images/tier.png" alt="Tierlist de Navegadores" width="70%">
+  <img src="images/tier.png" alt="Tierlist de Navegadores" width="50%">
 </p>
 
 - 🟩 Firefox y Brave a mi parecer son los mas seguros y LibreWolf, al ser un Fork de Firefox tiene un pequeño retraso en el ritmo de actualizaciones pero es de 1 a 3 dias, no es fatal para el uso diario, a menos que hablemos de vulnerabilidades de dia 0,pero no ocurre solo con proyectos comunitarios, las Zero-Day afectan a las grandes corporaciones y cada vez con mas frecuencia gracias al avance de la IA.
