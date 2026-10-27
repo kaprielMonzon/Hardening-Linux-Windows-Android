@@ -62,7 +62,7 @@ Para empezar el navegador es uno de los principales vectores de ataque, es muy i
 
 Una de las mejores herramientas para estar seguros en Firefox que no lleva bloqueador de anuncios como Brave, es usar uBlock Origin, es el mejor bloqueador del planeta, tiene opciones muy variadas de filtros y la posibilidad de agregar listas personalizadas de sitios que queramos bloquear.
 
-A continuacion voy a dejar una captura de tierlist de como califico a los siguientes navegadores para un uso diario, OJO con esto no quiero decir que navegador es bueno y cual es malo, solo veo las implicancias que tiene cada uno, como por ejemplo ritmo de actualizaciones, configuraciones por defecto y modelo de negocio.
+A continuacion voy a dejar una captura de tierlist de como califico a los siguientes navegadores para un uso diario, OJO con esto no quiero decir que navegador es bueno y cual es malo, solo veo las implicancias que tiene cada uno, como por ejemplo ritmo de actualizaciones, configuraciones por defecto y modelo de negocio. Aclaro que probe todos y cada uno de los navegadores que estan en esta tier
 
 <p align="center">
   <img src="images/tier.png" alt="Tierlist de Navegadores" width="60%">
