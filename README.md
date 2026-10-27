@@ -54,7 +54,7 @@ sudo ufw enable
 
 # 📱💻 Para todos los dispositivos
 
-No todo es instalar, configurar cosas y dejarlas desantendidas sin importancia. Debemos ser conscientes de nuestros movimientos dentro del sistema, podemos tener el mejor antivirus y el sistema mas seguro del planeta, pero si tenemos malas practicas no servira de nada.
+No todo es instalar, configurar cosas y dejarlas desantendidas sin importancia. Debemos ser conscientes de nuestros movimientos dentro del sistema, podemos tener el mejor antivirus y el sistema mas seguro del planeta, pero si tenemos malas practicas no servira de nada. Aca entran todos los dispositivos que usamos diariamente con, Android, iOS, MacOS, Windows y Linux.
 
 # 🖥️ Navegadores
 
