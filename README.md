@@ -52,6 +52,12 @@ Para dejarlo activo para siempre
 sudo ufw enable
 ```
 
+# Para Windows y Linux
+
 No todo es instalar, configurar cosas y dejarlas desantendidas sin importancia. Debemos ser conscientes de nuestros movimientos dentro del sistema, podemos tener el mejor antivirus y el sistema mas seguro del planeta, pero si tenemos malas practicas no servira de nada.
 
-Para empezar el navegador es uno de los principales vectores de ataque, es muy importante tenerlo actualizado y configurado. No voy a   
+Para empezar el navegador es uno de los principales vectores de ataque, es muy importante tenerlo actualizado y configurado. Siempre voy a ser partidario del uso de Brave y Firefox, por un lado Brave es un navegador basado en chromium con un monton de protecciones por defecto, como un anti-huella digital para que los sitios no armen un perfil nuestro equipo, un bloqueador de rastreadores y anuncios. Firefox tiene la caracteristica de no estar basado en el motor de Google, cosa que los mas entusiastas valoran por encima de Brave, esto se debe a que la empresa Google buena parte de sus ingresos provienen de la publicidad y de los datos de los usuarios.
+
+Una de las mejores herramientas para estar seguros en Firefox que no lleva bloqueador de anuncios como Brave, es usar uBlock Origin, es el mejor bloqueador del planeta, tiene opciones muy variadas de filtros y la posibilidad de agregar listas personalizadas de sitios que queramos bloquear.
+
+A continuacion voy a dejar una captura de tierlist de como califico a los siguientes navegadores para uso diario, OJO con esto no quiero decir que navegador es bueno y cual es malo, solo veo las implicancias que tiene cada uno, como por ejemplo ritmo de actualizaciones, configuraciones por defecto y modelo de negocio.
