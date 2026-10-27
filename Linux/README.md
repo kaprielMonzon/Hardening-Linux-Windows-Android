@@ -69,4 +69,8 @@ Para dejarlo activo para siempre
 sudo ufw enable
 ```
 
+# ⚠️ Sobre AppArmor y SELinux
 
+En sistemas basados en Debian o Ubuntu, AppArmor viene instalado, en distros basadas en Fedora y OpenSUSE, viene SELinux. En la mayoria de veces no es recomendable tocar nada porque estos programas, lo que hacen es configurar la capacidad y permisos de escritura de una aplicacion, por ejemplo, si tengo una aplicacion que cuando se abre genera un archivo en ~/.config y nosostros la restringimos
+esta no podra guardar su configuracion y la iniciaremos desde cero. Esto es un ejemplo demasiado sencillo de lo que realmente acciona y realiza cambios un programa como por ejemplo un navegador, que almacena archivos como cookies, sesiones, imagenes, archivos temporales, a parte estos ya traen su sandbox. Su uso deberia ser para un programa muy puntual, al que no le queremos dar tanto acceso a nuestro sistema y ponerle un limite. En la practica
+es un metodo muy tecnico que la realidad es mejor documentarse si se quiere integrar a nuestro sistema. Lo que mas recomiendo si se quiere aislar una aplicacion a la que no queremos darle tanto control, es mejor usar alternativas como Flatpak o AppImage, que tienen su propio mecanismo de proteccion y con Flatseal podemos configurar sus permisos de manera practica y sencilla. 
