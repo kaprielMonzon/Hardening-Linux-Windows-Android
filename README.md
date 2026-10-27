@@ -37,6 +37,15 @@ Con esta otra regla permitimos conectarnos a internet.
 ```text
 sudo ufw default allow outgoing
 ```
+Si tenemos un puerto ssh configurado debemos permitir la entrada, pero limitarlo para evitar ataque de fuerza bruta.
+
+```text
+sudo ufw allow 22/tcp
+```
+```text
+sudo ufw limit ssh
+```
+
 Para dejarlo activo para siempre
 
 ```text
@@ -45,4 +54,4 @@ sudo ufw enable
 
 No todo es instalar, configurar cosas y dejarlas desantendidas sin importancia. Debemos ser conscientes de nuestros movimientos dentro del sistema, podemos tener el mejor antivirus y el sistema mas seguro del planeta, pero si tenemos malas practicas no servira de nada.
 
-Para empezar el navegador que tengamos es muy importante 
+Para empezar el navegador es uno de los principales vectores de ataque, es muy importante tenerlo actualizado y configurado. No voy a   
