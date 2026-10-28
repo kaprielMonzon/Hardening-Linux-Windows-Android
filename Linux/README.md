@@ -69,6 +69,20 @@ Para dejarlo activo para siempre
 sudo ufw enable
 ```
 
+# Fail2Ban
+
+En caso de tener un puerto ssh, lo mejor es instalar una herramienta como Fail2Ban que detecta patrones de ataque de fuerza bruta hacia nuestro servidor y bloquea automaticamente ips que intentan entrar.
+
+```text
+sudo apt install fail2ban
+```
+
+Activamos el servicio de la siguiente manera:
+
+```text
+sudo systemctl enable --now fail2ban
+```
+
 # 🦠 Antivirus
 
 Un antivirus se dice que no es estrictamente necesario para Linux, pero en caso de necesitarlo la mejor alternativa es ClamAV, utiliza una base de datos con la que al escanear archivos de nuestro sistema y ver que esta fuera de lugar. Nos permite escanear una ruta especifica, eliminar automaticamente archivos infectados, guardar registros y dejar en cuarentena los archivos infectados en una carpeta aislada, en lugar de eliminarlos.
@@ -83,6 +97,12 @@ Para actualizar la base de datos antes del primer escaneo.
 
 ```text
 sudo freshclam
+```
+
+Para realizar un escaneo a una ruta especifica.
+
+```text
+clamscan -r /ruta/al/directorio
 ```
 
 Podemos activar este servicio para que lo haga de forma automatica.
