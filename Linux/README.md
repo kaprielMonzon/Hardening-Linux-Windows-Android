@@ -69,6 +69,34 @@ Para dejarlo activo para siempre
 sudo ufw enable
 ```
 
+# 🦠 Antivirus
+
+Un antivirus se dice que no es estrictamente necesario para Linux, pero en caso de necesitarlo la mejor alternativa es ClamAV, utiliza una base de datos con la que al escanear archivos de nuestro sistema y ver que esta fuera de lugar. Nos permite escanear una ruta especifica, eliminar automaticamente archivos infectados, guardar registros y dejar en cuarentena los archivos infectados en una carpeta aislada, en lugar de eliminarlos.
+
+Los comandos mas importantes a continuacion:
+
+```text
+sudo apt install clamav clamav-daemon clamav-freshclam
+```
+
+Para actualizar la base de datos antes del primer escaneo.
+
+```text
+sudo freshclam
+```
+
+Podemos activar este servicio para que lo haga de forma automatica.
+
+```text
+sudo systemctl start clamav-freshclam
+```
+
+En caso de querer una interfaz grafica sencilla, ClamUI. 
+
+```text
+flatpak install flathub io.github.linx_systems.ClamUI
+```
+
 # ⚠️ Sobre AppArmor y SELinux
 
 En sistemas basados en Debian o Ubuntu, AppArmor viene instalado, en distros basadas en Fedora y OpenSUSE, viene SELinux. En la mayoria de veces no es recomendable tocar nada porque estos programas, lo que hacen es configurar la capacidad y permisos de escritura de una aplicacion, por ejemplo, si tengo una aplicacion que cuando se abre genera un archivo en ~/.config y nosostros la restringimos
