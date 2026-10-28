@@ -121,10 +121,10 @@ flatpak install flathub io.github.linx_systems.ClamUI
 
 En este apartado voy a nombrar practicas que deberiamos evitar o mejorar, en nuestro dia a dia, podemos tener configurado todo lo anterior de este repositorio, pero nosotros mismos podemos ser el peor virus para la pobre maquina.
 
-- Dar permisos elevados como **chmod 777** a scripts que no sabemos que hacen, lo mejor es darselo a la IA y que lo analice antes de hacer nada.
-- Utilizar el **sudo** para todas nuestras tareas diarias, solo para actualizaciones o cosas delicadas del estilo, con el usuario root igual.
+- No dar permisos elevados como **chmod 777** a scripts que no sabemos que hacen, lo mejor es darselo a la IA y que lo analice antes de hacer nada.
+- No utilizar el **sudo** para todas nuestras tareas diarias, solo para actualizaciones o cosas delicadas del estilo, con el usuario root igual.
 - Integrar repositorios **PPA** que no conocemos, son repositorios de terceros que pueden ser de un usuario anonimo con malas intenciones, al instalarlos debemos usar permisos de root, lo que podria causar que el atacante tenga acceso completo a nuestro sistema. Siempre usar fuentes confiables y verificadas.  
-- Dejar servicios o puertos que no usamos activados, la superficie de ataque de esta manera aumenta. Siempre que desinstalemos o dejemos un paquete revisar si este tenia un servicio corriendo y desactivarlo.
+- No dejar servicios o puertos que no usamos activados, la superficie de ataque de esta manera aumenta. Siempre que desinstalemos o dejemos un paquete revisar si este tenia un servicio corriendo y desactivarlo.
 
 # ⚠️ Sobre AppArmor y SELinux
 
