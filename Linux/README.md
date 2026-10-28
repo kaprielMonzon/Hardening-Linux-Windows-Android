@@ -8,11 +8,11 @@ Ya se conoce la seguridad que brinda Linux al ser flexible y configurable, pero 
   <img src="images/tux.jpeg" width="50%">
 </p>
 
-# ⚠️ Atencion
+## ⚠️ Atencion
 
 Con esta guia no busco crear una maquina paranoica con configuraciones que puedan comprometer el uso diario, siempre hay que buscar el equilibrio en usabilidad y seguridad sin romper nada. 
 
-# 🛡️ Actualizaciones 
+## 🛡️ Actualizaciones 
 
 Primero debemos tener actualizado nuestro sistema ya sea en apt o flatpak, con el siguiente comando:
 
@@ -32,7 +32,7 @@ Si queremos que las actualizaciones de seguridad sean automaticas instalamos est
 sudo apt install unattended-upgrades
 ```
 
-# 🔥 Firewall
+## 🔥 Firewall
 
 Lo siguiente es configurar un firewall, en este caso utilizaremos UFW, un frontend del firewall del nucleo de linux, nftables o, iptables en sistemas mas antiguos. Traduce cosas como bloquear una ip, que sin UFW, se nos complicaria ya que es tedioso de configurar por si solo, este lo hace de manera sencilla para que el kernel lo entienda.
 
@@ -69,7 +69,7 @@ Para dejarlo activo para siempre
 sudo ufw enable
 ```
 
-# 🚫 Fail2Ban
+## 🚫 Fail2Ban
 
 En caso de tener un puerto ssh, lo mejor es instalar una herramienta como Fail2Ban que detecta patrones de ataque de fuerza bruta hacia nuestro servidor y bloquea automaticamente ips que intentan entrar.
 
@@ -83,7 +83,7 @@ Activamos el servicio de la siguiente manera:
 sudo systemctl enable --now fail2ban
 ```
 
-# 🦠 Antivirus
+## 🦠 Antivirus
 
 Un antivirus se dice que no es estrictamente necesario para Linux, pero en caso de necesitarlo la mejor alternativa es ClamAV, utiliza una base de datos con la que al escanear archivos de nuestro sistema y ver que esta fuera de lugar. Nos permite escanear una ruta especifica, eliminar automaticamente archivos infectados, guardar registros y dejar en cuarentena los archivos infectados en una carpeta aislada, en lugar de eliminarlos.
 
@@ -117,7 +117,7 @@ En caso de querer una interfaz grafica sencilla, ClamUI.
 flatpak install flathub io.github.linx_systems.ClamUI
 ```
 
-# 📔 Practicas mas concientes
+## 📔 Practicas mas concientes
 
 En este apartado voy a nombrar practicas que deberiamos evitar, en nuestro dia a dia, podemos tener configurado todo lo anterior de este repositorio, pero nosotros mismos podemos ser el peor virus para la pobre maquina.
 
@@ -126,7 +126,7 @@ En este apartado voy a nombrar practicas que deberiamos evitar, en nuestro dia a
 - Integrar repositorios **PPA** que no conocemos, son repositorios de terceros que pueden ser de un usuario anonimo con malas intenciones, al instalarlos debemos usar permisos de root, lo que podria causar que el atacante tenga acceso completo a nuestro sistema. Siempre usar fuentes confiables y verificadas.  
 - Dejar servicios o puertos que no usamos activados, la superficie de ataque de esta manera aumenta. Siempre que desinstalemos o dejemos un paquete revisar si este tenia un servicio corriendo y desactivarlo.
 
-# ⚠️ Sobre AppArmor y SELinux
+## ⚠️ Sobre AppArmor y SELinux
 
 En sistemas basados en Debian o Ubuntu, AppArmor viene instalado, en distros basadas en Fedora y OpenSUSE, viene SELinux. En la mayoria de veces no es recomendable tocar nada porque estos programas, lo que hacen es configurar la capacidad y permisos de escritura de una aplicacion, por ejemplo, si tengo una aplicacion que cuando se abre genera un archivo en ~/.config y nosostros la restringimos
 esta no podra guardar su configuracion y la iniciaremos desde cero. Esto es un ejemplo demasiado sencillo de lo que realmente acciona y realiza cambios un programa como por ejemplo un navegador, que almacena archivos como cookies, sesiones, imagenes, archivos temporales, a parte estos ya traen su sandbox. Su uso deberia ser para un programa muy puntual, al que no le queremos dar tanto acceso a nuestro sistema y ponerle un limite. En la practica
