@@ -93,7 +93,7 @@ findtime = 10m
 bantime = 600
 ```
 
-Con esto damos un maximo de 3 intentos de logueo, 10 minutos de baneo y una ventana de 10 minutos para el conteo de fallos, osea si falla 3 veces en 10 minutos, se bloquea 10 minutos.
+Con esto damos un maximo de 3 intentos de logueo, 10 minutos de baneo y una ventana de 10 minutos para el conteo de fallos, osea si falla 3 veces en 10 minutos, se bloquea por 10 minutos.
 
 Reiniciamos y activamos el servicio de la siguiente manera:
 
