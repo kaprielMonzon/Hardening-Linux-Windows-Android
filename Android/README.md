@@ -20,13 +20,13 @@ una tienda con aplicaciones de codigo abierto estrictamente revisadas, donde ver
 ## 🧰 Aurora Store
 
 Una alternativa privada, ligera y mas segura que Google Play, no necesitamos registro ni una cuenta, funciona como intermediario entre la tienda oficial de la empresa y nosotros. No requiere tanta interaccion con los servicios externos, por lo que funcionara mas rapido. Como advertencia, no descargar aplicaciones de origen dudoso, ya que
-como en la de Google, sigue siendo riesgoso. <a href="https://f-droid.org/packages/com.aurora.store/" target="_blank">**Aurora Store**</a>
+como en la de Google, sigue siendo riesgoso. <a href="https://f-droid.org/packages/com.aurora.store/" target="_blank">**Enlace de Descarga**</a>
 
 ## 👁️ InviZible Pro
 
 Una de las herramientas mas potentes de toda la lista, no cumple solo una funcion, tiene DNSCrypt, para ocultar consultas DNS que viajan sin cifrar, pudiendo ser interceptadas. Un modulo Tor, para ocultar la identidad, ubicacion, para busquedas delicadas en redes onion, Firewall para controlar el acceso a internet de las aplicaciones que no deseemos y muchas funciones mas. <a href="https://f-droid.org/en/packages/pan.alexander.tordnscrypt.stable/" target="_blank">**Enlace de Descarga**</a> 
 
-## Hypatia
+## 🛡️ Hypatia
 
 Uno de los antivirus mas completos, escaneo en tiempo real de archivos, no tiene subida de archivos a ningun servidor sin nuestro permiso, bajo uso de bateria, memoria y espacio en almacenamiento. <a href="https://apt.izzysoft.de/fdroid/index/apk/org.maintainteam.hypatia/" target="_blank">**Enlace de Descarga**</a>
 
