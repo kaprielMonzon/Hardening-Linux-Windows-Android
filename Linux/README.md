@@ -117,6 +117,20 @@ En caso de querer una interfaz grafica sencilla, ClamUI.
 flatpak install flathub io.github.linx_systems.ClamUI
 ```
 
+## SSH
+
+En caso de tener un servidor con entrada ssh deberiamos aplicar las siguientes configuraciones, ya que cualquier acceso no deseado podria exponer a nuestra maquina a un nivel muy peligroso.
+
+El siguiente agregado a la configuracion bloqueara el acceso root para cualquiera que quiera acceder.
+
+```text
+sudo nano /etc/ssh/sshd_config.d/99-hardening.conf
+```
+
+En este archivo pegamos ```text PermitRootLogin no```
+
+/etc/ssh/sshd_config.d
+
 ## 📔 Practicas mas concientes
 
 En este apartado voy a nombrar practicas que deberiamos evitar, en nuestro dia a dia, podemos tener configurado todo lo anterior de este repositorio, pero nosotros mismos podemos ser el peor virus para la pobre maquina.
