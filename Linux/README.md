@@ -129,8 +129,26 @@ sudo nano /etc/ssh/sshd_config.d/99-hardening.conf
 
 En este archivo pegamos ```PermitRootLogin no```
 
+## Contraseñas y acceso root
 
+En caso de tener una contraseña muy simple por ejemplo **jorge1965**, urgentemente deberiamos cambiarla si se trata de un servidor o no queremos que se adivine con un par de intentos, una frase o mas caracteres alfanumericos como, **m3gust4laM¡EL%34/**, hacen muy dificil la tarea del intrusor
+de sacar tu contraseña, la podremos cambiar con el siguiente comando:
 
+```text
+passwd
+```
+
+Si alguien sabe la contraseña e intenta loguearse como root lo mejor es bloquear su acceso, pero nosotros como sudo seguira funcionando.
+
+```text
+sudo passwd -l root
+```
+
+En caso de querer desbloquearlo:
+
+```text
+sudo passwd -u root
+```
 
 
 ## 📔 Practicas mas concientes
