@@ -143,7 +143,7 @@ En caso de querer una interfaz grafica sencilla, ClamUI.
 flatpak install flathub io.github.linx_systems.ClamUI
 ```
 
-## SSH
+## 🔐 SSH
 
 En caso de tener un servidor con entrada ssh deberiamos aplicar las siguientes configuraciones, ya que cualquier acceso no deseado podria exponer a nuestra maquina a un nivel muy peligroso.
 
@@ -167,7 +167,7 @@ Y recargamos el servicio:
 sudo systemctl reload ssh
 ```
 
-## Contraseñas y acceso root
+## 🔏 Contraseñas y acceso root
 
 En caso de tener una contraseña muy simple por ejemplo **jorge1965**, urgentemente deberiamos cambiarla si se trata de un servidor o no queremos que se adivine con un par de intentos, una frase o mas caracteres alfanumericos como, **m3gust4laM¡EL%34/**, hacen muy dificil la tarea del intrusor
 de sacar tu contraseña, la podremos cambiar con el siguiente comando:
@@ -196,7 +196,7 @@ En caso de querer desbloquearlo:
 sudo passwd -u root
 ```
 
-# Revision de conexiones y servicios
+# 🔗 Revision de conexiones y servicios
 
 Si tenes algun puerto o servicio que no conoces investigalo, son una posible via de ataque.
 
@@ -218,11 +218,11 @@ Para listar solo los servicios que estan corriendo en este momento:
 systemctl list-units --type=service --state=running
 ```
 
-**Enabled**: activados, ejecutandose al iniciar la maquina.
-**Disabled**: desactivados, solo inician cuando el usuario usa ```sudo systemctl start <servicio>```.
-**Masked**: enmascarados, servicios detenidos que solo se inician eliminando la propiedad masked usando ```sudo systemctl unmask <servicio>```.
-**Static**: estaticos, solo se ejecutan cuando un programa lo necesita.
-**Failed**: fallidos, servicios que dejaron de funcionar o funcionan incorrectamente.
+-**Enabled**: activados, ejecutandose al iniciar la maquina.
+-**Disabled**: desactivados, solo inician cuando el usuario usa ```sudo systemctl start <servicio>```.
+-**Masked**: enmascarados, servicios detenidos que solo se inician eliminando la propiedad masked usando ```sudo systemctl unmask <servicio>```.
+-**Static**: estaticos, solo se ejecutan cuando un programa lo necesita.
+-**Failed**: fallidos, servicios que dejaron de funcionar o funcionan incorrectamente.
 
 ## 📔 Practicas mas concientes
 
