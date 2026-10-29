@@ -10,11 +10,11 @@ esto requiere desbloquear el BootLoader del telefono, cosa que si usted no cuent
 
 ## Aplicaciones
 
-En Google Play hay una buena cantidad de apps que nos pueden ayudar, como antivirus, limpiadores de archivos, pero las politicas de la tienda suelen limitarlas y no llegan a cumplir completamente sus funcionalidades, por lo que usaremos <li><a href="https://f-droid.org/" target="_blank">**F-Droid**</a></li>,
+En Google Play hay una buena cantidad de apps que nos pueden ayudar, como antivirus, limpiadores de archivos, pero las politicas de la tienda suelen limitarlas y no llegan a cumplir completamente sus funcionalidades, por lo que usaremos <a href="https://f-droid.org/" target="_blank">**F-Droid**</a>, 
 una tienda con aplicaciones de codigo abierto estrictamente revisadas, donde veremos alternativas mas seguras a lo que podremos encontrar en Google Play.
 
 ## Aurora Store
 
- 
+Una alternativa privada, ligera y mas segura que Google Play, no necesitamos registro ni una cuenta, funciona como intermediario entre la tienda de Google y nosotros. No requiere interaccion con los servicios de Google, por lo que funcionara mas rapido. 
 
  
