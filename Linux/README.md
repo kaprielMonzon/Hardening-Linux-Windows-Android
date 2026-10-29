@@ -196,7 +196,7 @@ En caso de querer desbloquearlo:
 sudo passwd -u root
 ```
 
-# 🔗 Revision de conexiones y servicios
+## 🔗 Revision de conexiones y servicios
 
 Si tenes algun puerto o servicio que no conoces investigalo, son una posible via de ataque.
 
@@ -218,11 +218,11 @@ Para listar solo los servicios que estan corriendo en este momento:
 systemctl list-units --type=service --state=running
 ```
 
--**Enabled**: activados, ejecutandose al iniciar la maquina.
--**Disabled**: desactivados, solo inician cuando el usuario usa ```sudo systemctl start <servicio>```.
--**Masked**: enmascarados, servicios detenidos que solo se inician eliminando la propiedad masked usando ```sudo systemctl unmask <servicio>```.
--**Static**: estaticos, solo se ejecutan cuando un programa lo necesita.
--**Failed**: fallidos, servicios que dejaron de funcionar o funcionan incorrectamente.
+- **Enabled**: activados, ejecutandose al iniciar la maquina.
+- **Disabled**: desactivados, solo inician cuando el usuario usa ```sudo systemctl start <servicio>```.
+- **Masked**: enmascarados, servicios detenidos que solo se inician eliminando la propiedad masked usando ```sudo systemctl unmask <servicio>```.
+- **Static**: estaticos, solo se ejecutan cuando un programa lo necesita.
+- **Failed**: fallidos, servicios que dejaron de funcionar o funcionan incorrectamente.
 
 ## 📔 Practicas mas concientes
 
