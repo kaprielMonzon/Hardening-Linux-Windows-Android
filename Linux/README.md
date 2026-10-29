@@ -26,10 +26,11 @@ Para asegurarnos de tener un sistema limpio eliminamos paquetes huerfanos
 sudo apt --purge autoremove
 ```
 
-Si queremos que las actualizaciones de seguridad sean automaticas instalamos este paquete:
+Si queremos que las actualizaciones de seguridad sean automaticas instalamos este paquete y respondemos que si:
 
 ```text
 sudo apt install unattended-upgrades
+sudo dpkg-reconfigure --priority=low unattended-upgrades
 ```
 
 ## 🔥 Firewall
@@ -57,9 +58,6 @@ sudo ufw default allow outgoing
 Si tenemos un puerto ssh configurado debemos permitir la entrada, pero limitarlo para evitar ataques de fuerza bruta.
 
 ```text
-sudo ufw allow 22/tcp
-```
-```text
 sudo ufw limit ssh
 ```
 
@@ -77,10 +75,37 @@ En caso de tener un puerto ssh, lo mejor es instalar una herramienta como Fail2B
 sudo apt install fail2ban
 ```
 
-Activamos el servicio de la siguiente manera:
+Un ejemplo de configuracion util es el siguiente, nos iremos al siguiente directorio y crearemos un archivo en ```/etc/fail2ban/jail.local``` con 
 
 ```text
+sudo nano /etc/fail2ban/jail.local
+```
+
+Y pegaremos lo siguiente:
+
+```text
+[sshd]
+enabled = true
+filter = sshd
+logpath = /var/log/auth.log
+maxretry = 3
+findtime = 10m
+bantime = 600
+```
+
+Con esto damos un maximo de 3 intentos de logueo, 10 minutos de baneo y una ventana de 10 minutos para el conteo de fallos, osea si falla 3 veces en 10 minutos, se bloquea 10 minutos.
+
+Reiniciamos y activamos el servicio de la siguiente manera:
+
+```text
+sudo systemctl restart fail2ban
 sudo systemctl enable --now fail2ban
+```
+
+Y verificaremos su funcionamiento:
+
+```text
+sudo fail2ban-client status sshd
 ```
 
 ## 🦠 Antivirus
@@ -108,7 +133,8 @@ clamscan -r /ruta/al/directorio
 Podemos activar este servicio para que lo haga de forma automatica.
 
 ```text
-sudo systemctl start clamav-freshclam
+sudo systemctl enable --now clamav-daemon
+sudo systemctl enable --now clamav-freshclam
 ```
 
 En caso de querer una interfaz grafica sencilla, ClamUI. 
@@ -129,6 +155,18 @@ sudo nano /etc/ssh/sshd_config.d/99-hardening.conf
 
 En este archivo pegamos ```PermitRootLogin no```
 
+Validamos si lo escribimos bien:
+
+```text
+sudo sshd -t
+```
+
+Y recargamos el servicio:
+
+```text
+sudo systemctl reload ssh
+```
+
 ## Contraseñas y acceso root
 
 En caso de tener una contraseña muy simple por ejemplo **jorge1965**, urgentemente deberiamos cambiarla si se trata de un servidor o no queremos que se adivine con un par de intentos, una frase o mas caracteres alfanumericos como, **m3gust4laM¡EL%34/**, hacen muy dificil la tarea del intrusor
@@ -138,7 +176,15 @@ de sacar tu contraseña, la podremos cambiar con el siguiente comando:
 passwd
 ```
 
-Si alguien sabe la contraseña e intenta loguearse como root lo mejor es bloquear su acceso, pero nosotros como sudo seguira funcionando.
+Si alguien sabe la contraseña e intenta loguearse como root lo mejor es bloquear su acceso, pero nosotros como sudo seguira funcionando. 
+
+Primero antes de esto, deberiamos verificar si podemos usar sudo, ejecutando esto deberia devolver **root**.
+
+```text
+sudo whoami
+```
+
+Una vez que nos devuelva **root**, ya podremos bloquearlo.
 
 ```text
 sudo passwd -l root
@@ -150,12 +196,39 @@ En caso de querer desbloquearlo:
 sudo passwd -u root
 ```
 
+# Revision de conexiones y servicios
+
+Si tenes algun puerto o servicio que no conoces investigalo, son una posible via de ataque.
+
+Para ver conexiones:
+
+```text
+sudo ss -tulpen
+```
+
+Para listar todos los servicios activados o desactivados:
+
+```text
+systemctl list-unit-files --type=service
+```
+
+Para listar solo los servicios que estan corriendo en este momento:
+
+```text
+systemctl list-units --type=service --state=running
+```
+
+**Enabled**: activados, ejecutandose al iniciar la maquina.
+**Disabled**: desactivados, solo inician cuando el usuario usa ```sudo systemctl start <servicio>```.
+**Masked**: enmascarados, servicios detenidos que solo se inician eliminando la propiedad masked usando ```sudo systemctl unmask <servicio>```.
+**Static**: estaticos, solo se ejecutan cuando un programa lo necesita.
+**Failed**: fallidos, servicios que dejaron de funcionar o funcionan incorrectamente.
 
 ## 📔 Practicas mas concientes
 
 En este apartado voy a nombrar practicas que deberiamos evitar, en nuestro dia a dia, podemos tener configurado todo lo anterior de este repositorio, pero nosotros mismos podemos ser el peor virus para la pobre maquina.
 
-- Dar permisos elevados como **chmod 777** a scripts que no sabemos que hacen, lo mejor es darselo a la IA y que lo analice antes de hacer nada.
+- Dar permisos elevados como **chmod 777** a scripts que no sabemos que hacen, lo mejor es investigar en foros y analizarlo antes de hacer nada.
 - Utilizar el **sudo** para todas nuestras tareas diarias, solo para actualizaciones o cosas delicadas del estilo, con el usuario root igual.
 - Integrar repositorios **PPA** que no conocemos, son repositorios de terceros que pueden ser de un usuario anonimo con malas intenciones, al instalarlos debemos usar permisos de root, lo que podria causar que el atacante tenga acceso completo a nuestro sistema. Siempre usar fuentes confiables y verificadas.  
 - Dejar servicios o puertos que no usamos activados, la superficie de ataque de esta manera aumenta. Siempre que desinstalemos o dejemos un paquete revisar si este tenia un servicio corriendo y desactivarlo.
