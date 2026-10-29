@@ -127,9 +127,11 @@ El siguiente agregado a la configuracion bloqueara el acceso root para cualquier
 sudo nano /etc/ssh/sshd_config.d/99-hardening.conf
 ```
 
-En este archivo pegamos ```text PermitRootLogin no```
+En este archivo pegamos ```PermitRootLogin no```
 
-/etc/ssh/sshd_config.d
+
+
+
 
 ## 📔 Practicas mas concientes
 
