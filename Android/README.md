@@ -43,7 +43,7 @@ Por supuesto que en las ultimas versiones de Android, podemos modificar los perm
 ## 🔐 Autentificacion
 
 Hoy en dia las practicas de seguridad mejoraron muchisimo con respecto a 10 años atras, pero uno de los habitos mas inseguros que se siguen ignorando, es seguir usando autentificacion por SMS, ya que utiliza una tecnologia muy antigua que no cumple con los estandares, en su lugar es mejor utilizar aplicaciones como Google Authenticator o Authy, que generan codigos cada cierto tiempo
-sin conexion a internet o SMS y no pueden ser interceptadas. El riesgo que representa el SMS, es que sea siempre la llave maestra, con el solo acceso a este, podriamos perder nuestras redes, incluso cuentas de banco.  
+sin conexion a internet o SMS y no pueden ser interceptadas. El riesgo que representa el SMS, es que sea siempre la llave maestra, con que un intruso tenga acceso a este, podriamos perder nuestras redes, incluso cuentas de banco.  
 
 ## 📶 Redes Publicas
 
