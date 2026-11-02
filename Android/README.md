@@ -67,10 +67,14 @@ Una de las herramientas mas potentes de toda la lista, no cumple solo una funcio
 
 Uno de los antivirus mas completos, escaneo en tiempo real de archivos, no tiene subida de archivos a ningun servidor sin nuestro permiso, bajo uso de bateria, memoria y espacio en almacenamiento. <a href="https://apt.izzysoft.de/fdroid/index/apk/org.maintainteam.hypatia/" target="_blank">**Enlace de Descarga**</a>
 
+## 🧹 SD Maid 2
+
+Si bien se trata de una aplicacion enfocada a la limpieza de archivos y cache, tiene muchas funciones como eliminar archivos duplicados, borrado de cache individual en cada aplicacion de nuestro dispositivo y destruccion de archivos huerfanos. <a href="https://f-droid.org/en/packages/eu.darken.sdmse/" target="_blank">**Enlace de Descarga**</a>
+
 ## 🚨 Verificar Aplicaciones
 
 Siempre que vamos a instalar una aplicacion nueva, debemos revisar que sea la original o verificada, si bien las tiendas oficiales como Google Play o F-Droid tienen medidas de seguridad antes de dejar pasar cualquier cosa, las actualizaciones no pueden ser monitoreadas el 100% del tiempo, imaginese revisar un ecosistema entero de millones de aplicaciones, ahi es donde podrian colarte malware.
 
-## Tiendas Dudosas 
+## ⁉️ Tiendas Dudosas 
 
 Las apks de juegos modificados son peligrosas, son modificadas por terceros y se consiguen a su vez en lugares que son peores, tiendas del estilo como Aptoide, APKPure, tienen un mal historial. Aptoide permite la libertad sin control, todos pueden subir lo que sea, y APKMirror tienen aplicaciones falsas que se hacen pasar por las originales que esconden malware. Siempre traten de no salirse de las tiendas oficiales o alternativas de codigo abierto, con mucho mas control y seriedad. 
