@@ -7,7 +7,11 @@ seguros. Como siempre, no se pretende llegar a extremos al punto de quitarle fun
   <img src="images/android.jpeg" width="50%">
 </p>
 
-## ⬇️ Actualizaciones y Soporte
+## 📰 Noticias y Actualizaciones
+
+Cuando salen parches o actualizaciones en aplicaciones que usamos, debemos estar al dia lo antes posible, mas que solo agregar funciones, se corrigen vulnerabilidades. Tambien tomar acciones cuando por ejemplo Google o Microsoft tienen filtracciones de datos, en ese caso, cambiar credenciales, no toma mas que 5 minutos.
+
+## ⬇️ Soporte en Telefonos Antiguos
 
 Los celulares android en cuanto a actualizaciones tienen un periodo mas corto de vida del que nos gustaria tener, mas si contamos con un gama baja, un camino alternativo a esto es conseguir una CustomROM, pero no lo llame solucion ya que,
 esto requiere desbloquear el BootLoader del telefono, cosa que si usted no cuenta con el conocimiento, no lo recomiendo, existe el riesgo de dejar inutilizable el dispositivo.
@@ -41,7 +45,7 @@ Por supuesto que en las ultimas versiones de Android, podemos modificar los perm
 Hoy en dia las practicas de seguridad mejoraron muchisimo con respecto a 10 años atras, pero uno de los habitos mas inseguros que se siguen ignorando, es seguir usando autentificacion por SMS, ya que utiliza una tecnologia muy antigua que no cumple con los estandares, en su lugar es mejor utilizar aplicaciones como Google Authenticator o Authy, que generan codigos cada cierto tiempo
 sin conexion a internet o SMS y no pueden ser interceptadas. El riesgo que representa el SMS, es que sea siempre la llave maestra, con el solo acceso a este, podriamos perder nuestras redes, incluso cuentas de banco.  
 
-## 🛜 Redes Publicas
+## 📶 Redes Publicas
 
 Conectarse a una red fuera de nuestro hogar, ya sean de restaurantes, o cualquier establecimiento, representa un riesgo ya que se podria manipular de todo. Desde redirigirte a paginas falsas, avisos falsos, robar cookies de sesion e interminables peligros, dentro de una red peligrosa podriamos ser victimas de mil trucos que nos podrian comprometer. Para prevenir es mejor usar los datos moviles, una vpn y desactivar la conexion automaticamente a la primer red que se detecte. 
 
@@ -63,3 +67,6 @@ Una de las herramientas mas potentes de toda la lista, no cumple solo una funcio
 
 Uno de los antivirus mas completos, escaneo en tiempo real de archivos, no tiene subida de archivos a ningun servidor sin nuestro permiso, bajo uso de bateria, memoria y espacio en almacenamiento. <a href="https://apt.izzysoft.de/fdroid/index/apk/org.maintainteam.hypatia/" target="_blank">**Enlace de Descarga**</a>
 
+## 🚨 Verificar Aplicaciones
+
+Siempre que vamos a instalar una aplicacion nueva, debemos revisar que sea la original o verificada, si bien las tiendas oficiales como Google Play o F-Droid tienen medidas de seguridad antes de dejar pasar cualquier cosa, las actualizaciones no pueden ser monitoreadas el 100% del tiempo, imaginese revisar un ecosistema entero de millones de aplicaciones, ahi es donde podrian colarte malware.
