@@ -36,6 +36,15 @@ Al estar por instalar aplicaciones, una buena practica es estar conciente en los
 
 Por supuesto que en las ultimas versiones de Android, podemos modificar los permisos para que se solo esten con la app en uso y una vez cerrada dejan de usarse. Pero debemos de razonar por cuanto estamos dispuestos a ceder por instalar una inocente aplicacion.    
 
+## 🔐 Autentificacion
+
+Hoy en dia las practicas de seguridad mejoraron muchisimo con respecto a 10 años atras, pero uno de los habitos mas inseguros que se siguen ignorando, es seguir usando autentificacion por SMS, ya que utiliza una tecnologia muy antigua que no cumple con los estandares, en su lugar es mejor utilizar aplicaciones como Google Authenticator o Authy, que generan codigos cada cierto tiempo
+sin conexion a internet o SMS y no pueden ser interceptadas. El riesgo que representa el SMS, es que sea siempre la llave maestra, con el solo acceso a este, podriamos perder nuestras redes, incluso cuentas de banco.  
+
+## 🛜 Redes Publicas
+
+Conectarse a una red fuera de nuestro hogar, ya sean de restaurantes, o cualquier establecimiento, representa un riesgo ya que se podria manipular de todo. Desde redirigirte a paginas falsas, avisos falsos, robar cookies de sesion e interminables peligros, dentro de una red peligrosa podriamos ser victimas de mil trucos que nos podrian comprometer. Para prevenir es mejor usar los datos moviles, una vpn y desactivar la conexion automaticamente a la primer red que se detecte. 
+
 # 📦 Aplicaciones
 
 En Google Play hay una buena cantidad de apps que nos pueden ayudar, como antivirus, limpiadores de archivos, pero las politicas de la tienda suelen limitarlas y no llegan a cumplir completamente sus funcionalidades, por lo que usaremos <a href="https://f-droid.org/" target="_blank">**F-Droid**</a>, 
