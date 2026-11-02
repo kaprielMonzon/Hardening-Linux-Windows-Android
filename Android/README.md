@@ -16,9 +16,17 @@ esto requiere desbloquear el BootLoader del telefono, cosa que si usted no cuent
 
 A menos que usted sea una figura publica, no vale la pena estar exponiendo fotos de lugares a los que concurrimos regularmente, ni hablar si es nuestro hogar en una cuenta ya sea Facebook, Instagram, o cualquier otra red si no la tenemos privada, la mejor alternativa es tener una cuenta para solo familiares y amigos.  
 
-## 🔑 Permisos y Recoleccion de Datos
+## 🔕 Funciones Desatendidas
 
-Al estar por instalar aplicaciones, una buena practica es estar conciente en los detalles de la misma, uno de ellos son los permisos que le concedemos al usarla, podemos pensar que la aplicacion interactua de una manera, pero en realidad lo hace de muchas. Si por ejemplo instalamos un bloc de notas, este no tendria que pedir permisos de microfono, camara o ubicacion, como minimo es sospechoso, ya se sabe que muchas apps hacen este tipo de acciones para monetizar y no solo limitarse a mostrar anuncios, sino vender datos intimos que sin darnos cuenta, les brindamos a estas apps fraudulentas.
+Tener cosas activadas en un momento que no estan siendo utilizadas como la ubicacion, bluetooth y la funcion NFC, es mejor tenerlas desactivadas, ya que aumentamos los posibles vectores de ataque de nuestro dispositivo.
+
+## 🚫 Limpiar Software Innecesario
+
+Si prestamos atencion a la cantidad de servicios que tenemos, por lo menos 1 esta sobrando, mientras permanece ahi, no sabemos que podria estar haciendo por detras, si no es de vital importancia, es mejor desinstalarlo.
+
+## 🔑 Permisos
+
+Al estar por instalar aplicaciones, una buena practica es estar conciente en los detalles de la misma, uno de ellos son los permisos que le concedemos al usarla, podemos pensar que la aplicacion interactua de una manera, pero en realidad lo hace de muchas. Si por ejemplo instalamos una calculadora, esta no tendria que pedir permisos de microfono, camara o ubicacion, como minimo es sospechoso, ya se sabe que muchas apps hacen este tipo de acciones para monetizar y no solo limitarse a mostrar anuncios, sino vender datos intimos que sin darnos cuenta, les brindamos a estas apps fraudulentas.
 
 <p align="center">
   <img src="images/yeees.png" width="50%">
@@ -26,9 +34,7 @@ Al estar por instalar aplicaciones, una buena practica es estar conciente en los
   <em>Este ejemplo es de un juego, porque deberia borrar contenido de almacenamiento o ver cosas como fotos?</em>
 </p>
 
-Por supuesto que en las ultimas versiones de Android, podemos modificar los permisos para que se solo esten con la app en uso y una vez cerrada dejan de usarse. Pero debemos de razonar por cuanto estamos dispuestos a ceder por instalar una inocente aplicacion.  
-
- 
+Por supuesto que en las ultimas versiones de Android, podemos modificar los permisos para que se solo esten con la app en uso y una vez cerrada dejan de usarse. Pero debemos de razonar por cuanto estamos dispuestos a ceder por instalar una inocente aplicacion.    
 
 # 📦 Aplicaciones
 
