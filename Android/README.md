@@ -9,7 +9,7 @@ seguros. Como siempre, no se pretende llegar a extremos al punto de quitarle fun
 
 ## 📰 Noticias y Actualizaciones
 
-Cuando salen parches o actualizaciones en aplicaciones que usamos, debemos estar al dia lo antes posible, mas que solo agregar funciones, se corrigen vulnerabilidades. Tambien tomar acciones cuando por ejemplo Google o Microsoft tienen filtracciones de datos, en ese caso, cambiar credenciales, no toma mas que 5 minutos.
+Cuando salen parches o actualizaciones en aplicaciones que usamos, debemos estar al dia lo antes posible, mas que solo agregar funciones, se corrigen vulnerabilidades. Tambien tomar acciones cuando por ejemplo Google o Microsoft tienen filtracciones de datos, en ese caso, cambiar credenciales, no toma mas de 5 minutos.
 
 ## ⬇️ Soporte en Telefonos Antiguos
 
