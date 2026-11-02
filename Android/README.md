@@ -56,7 +56,7 @@ una tienda con aplicaciones de codigo abierto estrictamente revisadas, donde ver
 
 ## 🧰 Aurora Store
 
-Una alternativa privada, ligera y mas segura que Google Play, no necesitamos registro ni una cuenta, funciona como intermediario entre la tienda oficial de la empresa y nosotros. No requiere tanta interaccion con los servicios externos, por lo que funcionara mas rapido. Como advertencia, no descargar aplicaciones de origen dudoso, ya que
+Una alternativa privada, ligera a Google Play, no necesitamos registro ni una cuenta, funciona como intermediario entre la tienda oficial de la empresa y nosotros. No requiere tanta interaccion con los servicios externos, por lo que funcionara mas rapido. Como advertencia, no descargar aplicaciones de origen dudoso, ya que
 como en la de Google, sigue siendo riesgoso. <a href="https://f-droid.org/packages/com.aurora.store/" target="_blank">**Enlace de Descarga**</a>
 
 ## 👁️ InviZible Pro
@@ -70,3 +70,7 @@ Uno de los antivirus mas completos, escaneo en tiempo real de archivos, no tiene
 ## 🚨 Verificar Aplicaciones
 
 Siempre que vamos a instalar una aplicacion nueva, debemos revisar que sea la original o verificada, si bien las tiendas oficiales como Google Play o F-Droid tienen medidas de seguridad antes de dejar pasar cualquier cosa, las actualizaciones no pueden ser monitoreadas el 100% del tiempo, imaginese revisar un ecosistema entero de millones de aplicaciones, ahi es donde podrian colarte malware.
+
+## Tiendas Dudosas 
+
+Las apks de juegos modificados son peligrosas, son modificadas por terceros y se consiguen a su vez en lugares que son peores, tiendas del estilo como Aptoide, APKPure, tienen un mal historial. Aptoide permite la libertad sin control, todos pueden subir lo que sea, y APKMirror tienen aplicaciones falsas que se hacen pasar por las originales que esconden malware. Siempre traten de no salirse de las tiendas oficiales o alternativas de codigo abierto, con mucho mas control y seriedad. 
